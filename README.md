@@ -7,7 +7,7 @@
 # 2025  
 <table>
     <tr>
-        <td><img src="outputs/30dayschallenge"></td>
+        <td><img src="outputs/2025_04_01_waffle_chart.jpg"></td>
         <td></td>
     </tr>
 </table>
