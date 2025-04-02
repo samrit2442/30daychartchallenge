@@ -7,7 +7,7 @@
 # 2025  
 <table>
     <tr>
-        <td><img src=""></td>
+        <td><img src="outputs/30dayschallenge"></td>
         <td></td>
     </tr>
 </table>
