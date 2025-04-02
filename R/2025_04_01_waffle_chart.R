@@ -19,7 +19,7 @@ df <- tribble(~platform, ~users,
 custom_labels <- c("378M", "414M", "150M", "536M")
 
 
-df |> ggplot(aes(label = platform, values = users)) +
+waffle_chart <- df |> ggplot(aes(label = platform, values = users)) +
   geom_pictogram(n_rows = 10,
                  flip = TRUE,
                  make_proportional = TRUE,
@@ -54,7 +54,13 @@ df |> ggplot(aes(label = platform, values = users)) +
         plot.subtitle = element_markdown(size = 20, hjust = 0.5, face = "italic", family = "poppins"),
         plot.caption = element_text(size = 12, hjust = 0.5, family = "poppins"))
         
-        
-        
-        
-        
+waffle_chart
+     
+ggsave("./outputs/2025_04_01_waffle_chart.svg", waffle_chart,
+       width = 15, height = 12, dpi = 900, units = "in", limitsize = T)
+
+
+
+
+
+
